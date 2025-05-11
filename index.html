@@ -27,6 +27,32 @@
     </script>
 
     <style>
+        /* Developer Button Styles */
+        .dev-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .developer-btn {
+            background: linear-gradient(120deg, #5E72E4 0%, #825EE4 100%);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .developer-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
         /* Custom Styles for a more unique feel */
         body {
             font-family: 'Inter', 'Segoe UI', sans-serif; /* Added Inter as a preferred font */
@@ -129,6 +155,11 @@
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800">
+    <div class="dev-button">
+        <a href="https://sahilthakur198.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+            <button class="developer-btn">Developer</button>
+        </a>
+    </div>
     <header class="header-gradient text-white shadow-lg">
         <div class="container mx-auto px-6 py-8 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-2">Universal File Converter</h1>
